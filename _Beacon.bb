@@ -1,19 +1,21 @@
 [
   {
-    "ProfileName": "Drupalgeddon",
+    "ProfileName": "Beacon",
     "Name": "",
     "Enabled": true,
     "Scanner": 2,
-    "Author": "@egarme",
+    "Author": "@v13rs8a",
     "Payloads": [],
     "Encoder": [],
     "UrlEncode": false,
     "CharsToUrlEncode": "",
     "Grep": [
-      "true,,\\/user\\/register.*Powered by Drupal"
+      "true,,v13rsba",
+      "true,Or,wierzba"
     ],
     "Tags": [
-      "All"
+      "All",
+      "Cloud"
     ],
     "PayloadResponse": false,
     "NotResponse": false,
@@ -25,10 +27,10 @@
     "CaseSensitive": false,
     "ExcludeHTTP": false,
     "OnlyHTTP": false,
-    "IsContentType": false,
-    "ContentType": "",
+    "IsContentType": true,
+    "ContentType": "text/css,image/jpeg,image/png,image/svg+xml,image/gif,image/tiff,image/webp,image/x-icon,application/font-woff,image/vnd.microsoft.icon,font/ttf,font/woff2",
     "HttpResponseCode": "",
-    "NegativeCT": false,
+    "NegativeCT": true,
     "IsResponseCode": false,
     "ResponseCode": "",
     "NegativeRC": false,
@@ -42,10 +44,10 @@
     "payloadPosition": 0,
     "payloadsFile": "",
     "grepsFile": "",
-    "IssueName": "Drupalgeddon",
-    "IssueSeverity": "High",
-    "IssueConfidence": "Firm",
-    "IssueDetail": "Possible Drupalgeddon 2 or 3:\u003cbr\u003e\n\n\u003cbr\u003ehttps://www.exploit-db.com/ghdb/4782/\n\n\u003cbr\u003ehttps://www.exploit-db.com/exploits/44482/\n\n\u003cbr\u003ehttps://www.exploit-db.com/exploits/44557/\n",
+    "IssueName": "Beacon",
+    "IssueSeverity": "Information",
+    "IssueConfidence": "Certain",
+    "IssueDetail": "",
     "RemediationDetail": "",
     "IssueBackground": "",
     "RemediationBackground": "",
