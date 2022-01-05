@@ -10,7 +10,8 @@
     "UrlEncode": false,
     "CharsToUrlEncode": "",
     "Grep": [
-      "true,,(SecretAccessKey|aws_secret_access_key)"
+      "true,,(SecretAccessKey|aws_secret_access_key)",
+      "true,Or,(?i)(aws_access_key_id|aws_secret_access_key)(.{0,20})?\u003d.[0-9a-zA-Z\\/+]{20,40}"
     ],
     "Tags": [
       "All",

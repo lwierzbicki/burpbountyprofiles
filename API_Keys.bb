@@ -4,7 +4,7 @@
     "Name": "",
     "Enabled": true,
     "Scanner": 2,
-    "Author": "@six2dez1",
+    "Author": "@v13rs8a",
     "Payloads": [],
     "Encoder": [],
     "UrlEncode": false,
@@ -43,7 +43,14 @@
       "true,Or,(?i)nr-internal-api-key",
       "true,Or,(?i)NRAK-[A-Z0-9]{27}",
       "true,Or,(?i)NRRA-[a-f0-9]{42}",
-      "true,Or,(?i)NRAA-[a-f0-9]{27}"
+      "true,Or,(?i)NRAA-[a-f0-9]{27}",
+      "true,Or,(?i)linkedin(.{0,20})?(?-i)[\u0027\\\"][0-9a-z]{12}[\u0027\\\"]",
+      "true,Or,(?i)linkedin(.{0,20})?[\u0027\\\"][0-9a-z]{16}[\u0027\\\"]",
+      "true,Or,(?i)hockey.{0,50}(\\\\\\\"|\u0027|`)?[0-9a-f]{32}(\\\\\\\"|\u0027|`)?",
+      "true,Or,(?i)sonar.{0,50}(\\\\\\\"|\u0027|`)?[0-9a-f]{40}(\\\\\\\"|\u0027|`)?",
+      "true,Or,hawk\\.[0-9A-Za-z\\-_]{20}\\.[0-9A-Za-z\\-_]{20}",
+      "true,Or,(?i)twitter(.{0,20})?[\u0027\\\"][0-9a-z]{18,25}",
+      "true,Or,[t|T][w|W][i|I][t|T][t|T][e|E][r|R].{0,30}[\u0027\\\"\\\\s][0-9a-zA-Z]{35,44}[\u0027\\\"\\\\s]"      
     ],
     "Tags": [
       "All"

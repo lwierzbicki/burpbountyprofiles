@@ -648,6 +648,8 @@
       "true,Or,www[_-]googleapis[_-]com",
       "true,Or,yangshun[_-]gh[_-]password",
       "true,Or,yangshun[_-]gh[_-]token",
+      "true,Or,X-NuGet-ApiKey",
+      "true,Or,X-Octopus-ApiKey",      
       "true,Or,yt[_-]account[_-]client[_-]secret",
       "true,Or,yt[_-]account[_-]refresh[_-]token",
       "true,Or,yt[_-]api[_-]key",

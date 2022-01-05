@@ -1,16 +1,29 @@
 [
   {
-    "ProfileName": "Paypal_Braintree_access_token",
+    "ProfileName": "Application_Resources",
     "Name": "",
     "Enabled": true,
     "Scanner": 2,
-    "Author": "@six2dez1",
+    "Author": "@v13rs8a",
     "Payloads": [],
     "Encoder": [],
     "UrlEncode": false,
     "CharsToUrlEncode": "",
     "Grep": [
-      "true,,access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}"
+      "true,,http(?:s)://[^\u003e\u003c\\.\\\u0027\\\" \\n\\)]+.[^\u003e\u003c\\.\\\u0027\\\" \\n\\)]+.[^\u003e\u003c\\.\\\u0027\\\" \\n\\)]+.digitaloceanspaces.com",
+      "true,Or,ec2-[0-9-]+.cd-[a-z0-9-]+.compute.amazonaws.com",
+      "true,Or,[a-zA-Z0-9-\\.\\_]+\\.s3\\.amazonaws\\.com",
+      "true,Or,s3:\\/\\/[a-zA-Z0-9-\\.\\_]+",
+      "true,Or,s3.amazonaws.com\\/[a-zA-Z0-9-\\.\\_]+",
+      "true,Or,s3.console.aws.amazon.com\\/s3\\/buckets\\/[a-zA-Z0-9-\\.\\_]+",
+      "true,Or,s3\\\\.amazonaws.com[/]+|[a-zA-Z0-9_-]*\\\\.s3\\\\.amazonaws.com",
+      "true,Or,http(?:s):\\/\\/.[^\u003e\u003c\\\u0027\\\" \\n\\)]+.blob.core.windows.net\\/.[^\u003e\u003c\\\u0027\\\" \\n\\/)]+.\\/",
+      "true,Or,.corp.google.com",
+      "true,Or,.c.googlers.com",
+      "true,Or,[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",
+      "true,Or,(\\.storage\\.googleapis\\.com)|(\\.storage\\.cloud\\.googleapis\\.com)",
+      "true,Or,[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",  
+      "true,Or,https?:\\/\\/(www\\.)?youtube.com\\/channel\\/UC([-_a-z0-9]{22})"    
     ],
     "Tags": [
       "All"
@@ -42,7 +55,7 @@
     "payloadPosition": 0,
     "payloadsFile": "",
     "grepsFile": "",
-    "IssueName": "Paypal Braintree access token",
+    "IssueName": "Application Resources Discovered",
     "IssueSeverity": "Information",
     "IssueConfidence": "Certain",
     "IssueDetail": "",
